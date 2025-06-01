@@ -14,11 +14,11 @@ const starVariants = cva(
     },
     defaultVariants: {
       size: 'md',
-    }
-  }
+    },
+  },
 );
 
-type StarGridProps =  {
+type StarGridProps = {
   rows?: number;
   cols?: number;
   className?: string;
@@ -30,7 +30,7 @@ function Stars({
   return (
     <div
       className={cn(
-        "grid gap-1 w-max",
+        'grid gap-1 w-max',
         className,
       )}
       style={{
@@ -39,9 +39,10 @@ function Stars({
       }}
     >
       {
-        Array.from({ length: rows * cols }).map((_, i) => (
+        Array.from({ length: rows * cols }).map(() => (
           <Star
-            key={`star-${i}-${Math.random()}`} // TODO: It is better creating a context that keeps stars amount on the page
+            key={crypto.randomUUID()}
+            // TODO: It is better creating a context that keeps stars amount on the page
             className={starVariants({ size })}
             aria-label="Star"
           />

@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import { VariantProps } from "class-variance-authority";
-import { Triangle, triangleVariants } from "./triangle";
+import { cn } from '@/lib/utils';
+import { VariantProps } from 'class-variance-authority';
+import { Triangle, triangleVariants } from './triangle';
 
 type TrianglesProps = {
   rows?: number;
@@ -14,7 +14,7 @@ function Triangles({
   return (
     <div
       className={cn(
-        "grid gap-1 w-max",
+        'grid gap-1 w-max',
         className,
       )}
       style={{
@@ -23,9 +23,9 @@ function Triangles({
       }}
     >
       {
-        Array.from({ length: rows * cols }).map((_, i) => (
+        Array.from({ length: rows * cols }).map(() => (
           <Triangle
-            key={`triangle-${i}-${Math.random()}`}
+            key={crypto.randomUUID()}
             className={triangleVariants({ size })}
             aria-label="Star"
           />
