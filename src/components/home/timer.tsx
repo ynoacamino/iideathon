@@ -5,15 +5,13 @@ import Section from '../ui/section';
 
 function DynamicTimeUnit({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex flex-col items-center mx-1 sm:mx-2">
-      <div className="flex items-center">
-        <span className="font-bold bg-secondary text-primary px-2 py-1 sm:px-3 sm:py-2 rounded-sm text-2xl sm:text-4xl md:text-5xl font-mono">
-          {value < 10 ? `0${value}` : value}
-        </span>
-        <span className="font-bold text-secondary ml-2 text-md sm:text-xl md:text-2xl min-w-[50px] sm:min-w-[60px]">
-          {label}
-        </span>
-      </div>
+    <div className="flex flex-col items-center justify-center">
+      <span className="font-bold bg-secondary text-primary px-2 py-1 sm:px-3 sm:py-2 rounded-sm text-3xl sm:text-4xl md:text-5xl">
+        {value < 10 ? `0${value}` : value}
+      </span>
+      <span className="font-bold text-secondary ml-2 text-md sm:text-xl md:text-2xl">
+        {label}
+      </span>
     </div>
   );
 }
@@ -73,7 +71,7 @@ export default function Timer() {
       <Section background="primary" className="py-4 md:py-12">
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center">
-            <h2 className="text-3xl sm:text-5xl font-bold text-secondary">
+            <h2 className="text-4xl sm:text-6xl font-bold text-secondary">
               ¡El evento ha comenzado!
             </h2>
           </div>
@@ -86,7 +84,7 @@ export default function Timer() {
     <Section background="primary" className="py-4 md:py-12">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center">
-          <h2 className="text-xl sm:text-3xl font-semibold mb-4 sm:mb-8 text-center">
+          <h2 className="text-3xl sm:text-5xl font-semibold mb-4 sm:mb-8 text-center">
             Faltan
           </h2>
 
@@ -94,12 +92,10 @@ export default function Timer() {
             <DynamicTimeUnit value={timeLeft.days} label="días" />
             <DynamicTimeUnit value={timeLeft.hours} label="horas" />
             <DynamicTimeUnit value={timeLeft.minutes} label="minutos" />
-            <div className="hidden sm:block">
-              <DynamicTimeUnit value={timeLeft.seconds} label="segundos" />
-            </div>
+            <DynamicTimeUnit value={timeLeft.seconds} label="segundos" />
           </div>
 
-          <p className="text-xl sm:text-3xl font-bold mt-8 sm:mt-16 text-center">
+          <p className="text-2xl sm:text-4xl font-bold mt-8 sm:mt-16 text-center">
             ¡Pronto empezará lo genial!
           </p>
         </div>

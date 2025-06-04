@@ -1,11 +1,11 @@
 'use client';
 
+import Section from '@/components/ui/section';
 import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconBrandLinkedin,
 } from '@tabler/icons-react';
-import Section from '@/components/ui/section';
 
 import { motion } from 'motion/react';
 
@@ -32,7 +32,7 @@ const socials_networks = [
 
 export default function Hero() {
   return (
-    <Section className="grid grid-cols-1 md:grid-cols-3 gap-y-10">
+    <Section className="grid grid-cols-1 md:grid-cols-3 gap-y-10 mb-20">
       <div className="col-span-1 md:col-span-2 w-full justify-center flex items-start flex-col gap-2">
         <h1>
           <img
@@ -44,7 +44,7 @@ export default function Hero() {
             Ideathon concurso de ideas para el desarrollo de software por IEEE UNSA
           </span>
         </h1>
-        <p className="text-xl text-primary font-bold w-full max-w-xl">
+        <p className="text-3xl text-primary font-bold w-full max-w-xl">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industrys standard dummy text.
         </p>

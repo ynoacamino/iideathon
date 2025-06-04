@@ -31,7 +31,7 @@ export default function Section({
         )
       }
       <section
-        className={cn('w-full flex justify-center items-center pb-28 pt-10 px-4 md:px-6 relative', {
+        className={cn('w-full flex justify-center items-center py-10 px-4 md:px-6 relative', {
           'bg-background': background === 'background',
           'bg-primary text-background': background === 'primary',
         })}
@@ -42,19 +42,19 @@ export default function Section({
             <>
               <Stars
                 cols={3}
-                className="absolute top-0 left-10 md:left-14 animate-bounce"
+                className="absolute top-0 left-5 sm:left-20 md:left-36 animate-bounce"
               />
               <Triangles
                 cols={2}
-                className="absolute bottom-5 -translate-y-full left-10 md:left-14"
+                className="absolute bottom-0 left-5 sm:left-20 md:left-36"
               />
               <DiagonalSquare
-                className="absolute top-0 right-10 md:right-14 size-20 md:size-32"
+                className="absolute top-0 right-5 sm:right-20 md:right-36 size-16 sm:size-20 md:size-32"
               />
-              <Squiggle className="absolute right-12 md:right-16 top-16 md:top-22 w-18 md:w-24" />
+              <Squiggle className="absolute right-5 sm:right-24 md:right-38 top-10 sm:top-16 md:top-22 w-12 sm:w-18 md:w-24" />
               <Stars
                 cols={3}
-                className="absolute bottom-5 -translate-y-full right-10 md:right-14 animate-bounce"
+                className="absolute bottom-0 right-5 sm:right-20 md:right-36 animate-bounce"
               />
             </>
           )
@@ -66,8 +66,8 @@ export default function Section({
       {
         background === 'primary' && (
         <Wavify
-          fill="#ffffff"
-          style={{ backgroundColor: '#360094' }}
+          fill="#360094"
+          className="rotate-180"
           paused={false}
           options={{
             height: 15,

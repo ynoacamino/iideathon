@@ -53,10 +53,10 @@ export default function Event() {
       <h2 className="text-5xl md:text-6xl font-black text-center mb-10">
         CONOCE EL EVENTO
       </h2>
-      <p className="text-center text-xl md:text-2xl w-full max-w-2xl">
+      <p className="text-center text-2xl md:text-3xl w-full max-w-2xl">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 my-10">
         {steps.map((step) => (
           <Step key={step.number} number={step.number} image={step.image} />
         ))}
