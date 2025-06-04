@@ -1,4 +1,5 @@
-"use client"
+'use client';
+
 import { useEffect, useState } from 'react';
 import Section from '../ui/section';
 
@@ -31,16 +32,18 @@ export default function Timer() {
   const calculateTimeLeft = (): TimeLeft => {
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
-    
+
     if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      return {
+        days: 0, hours: 0, minutes: 0, seconds: 0,
+      };
     }
 
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
       minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60)
+      seconds: Math.floor((difference / 1000) % 60),
     };
   };
 
@@ -60,7 +63,12 @@ export default function Timer() {
     return null;
   }
 
-  if (timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0) {
+  if (
+    timeLeft.days === 0
+    && timeLeft.hours === 0
+    && timeLeft.minutes === 0
+    && timeLeft.seconds === 0
+  ) {
     return (
       <Section background="primary" className="py-4 md:py-12">
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
@@ -81,7 +89,7 @@ export default function Timer() {
           <h2 className="text-xl sm:text-3xl font-semibold mb-4 sm:mb-8 text-center">
             Faltan
           </h2>
-          
+
           <div className="w-full flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6">
             <DynamicTimeUnit value={timeLeft.days} label="días" />
             <DynamicTimeUnit value={timeLeft.hours} label="horas" />
