@@ -4,7 +4,7 @@ function Diagonals() {
   return (
     <svg viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-        <g id="diagonal-stripes" fill="#000000">
+        <g id="diagonal-stripes" fill="#6731a2">
           <polygon points="0 40 40 0 20 0 0 20" />
           <polygon points="40 40 40 20 20 40" />
         </g>

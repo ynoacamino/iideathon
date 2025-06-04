@@ -7,13 +7,15 @@ export const triangleVariants = cva(
   {
     variants: {
       size: {
-        sm: 'size-4',
-        md: 'size-6',
-        lg: 'size-8',
+        sm: 'size-8',
+        md: 'size-10',
+        lg: 'size-12',
+        xl: 'size-14',
+        responsive: 'size-8 md:size-10 lg:size-12 xl:size-14',
       },
     },
     defaultVariants: {
-      size: 'md',
+      size: 'responsive',
     },
   },
 );
