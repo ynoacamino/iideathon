@@ -30,9 +30,14 @@ function Step({ number, image }: { number: number; image: string }) {
       />
       <motion.span
         className="absolute -bottom-25 -left-13"
-        initial={{ scale: 0.2, opacity: 0.3 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ scale: 0.6, rotate: -30, opacity: 0.7 }}
+        whileInView={{
+          scale: [0.6, 1.4, 1],
+          rotate: [-30, 15, 0],
+          opacity: [0.7, 1],
+        }}
         viewport={{ amount: 0.4, once: true }}
+        transition={{ duration: 0.4, delay: 0 }}
       >
         <strong className="font-black text-yellow-400 stroke-9 stroke-primary text-[160px] outlined-text">
           {number}
