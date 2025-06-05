@@ -17,7 +17,7 @@ export default function SectionHome() {
         </p>
         <Button
           size="lg"
-          className="text-2xl py-3 font-bold mt-4"
+          className="text-2xl mt-4"
         >
           Inscribete
         </Button>
