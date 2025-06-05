@@ -1,5 +1,5 @@
-import Section from '@/components/ui/section';
 import { Button } from '@/components/ui/button';
+import Section from '@/components/ui/section';
 import Subtitle from '../ui/subtitle';
 
 const DEFAULT_IMAGE = 'https://ynoa-uploader.ynoacamino.site/uploads/1748797729_Logo_Principal_Transparente%203.png';
@@ -11,13 +11,13 @@ export default function SectionHome() {
         <Subtitle>
           As a veterinarian and lover of animal
         </Subtitle>
-        <p className="text-xl text-primary font-bold w-full max-w-xl">
+        <p className="text-2xl text-primary font-bold w-full max-w-xl">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industrys standard dummy text.
         </p>
         <Button
           size="lg"
-          className="text-xl py-3 font-bold my-8"
+          className="text-2xl py-3 font-bold mt-4"
         >
           Inscribete
         </Button>

@@ -3,7 +3,6 @@ import { Boogaloo } from 'next/font/google';
 import './globals.css';
 
 const boogaloo = Boogaloo({
-  variable: '--font-boogaloo-sans',
   weight: '400',
   subsets: ['latin'],
 });
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${boogaloo.variable} antialiased w-full`}
+        className={`${boogaloo.className} antialiased w-full`}
       >
         {children}
       </body>

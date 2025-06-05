@@ -10,10 +10,12 @@ const starVariants = cva(
         sm: 'size-4',
         md: 'size-6',
         lg: 'size-8',
+        xl: 'size-10',
+        responsive: 'size-4 md:size-6 lg:size-8 xl:size-10',
       },
     },
     defaultVariants: {
-      size: 'md',
+      size: 'responsive',
     },
   },
 );
