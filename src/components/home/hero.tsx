@@ -1,6 +1,7 @@
 'use client';
 
 import Section from '@/components/ui/section';
+import { DEFAULT_IMAGE, LOGO } from '@/lib/images';
 import {
   IconBrandFacebook,
   IconBrandInstagram,
@@ -8,9 +9,6 @@ import {
 } from '@tabler/icons-react';
 
 import { motion } from 'motion/react';
-
-const LOGO = 'https://ynoa-uploader.ynoacamino.site/uploads/1748798983_Component%201%20%2810%29%201%20%281%29.png';
-const DEFAULT_IMAGE = 'https://ynoa-uploader.ynoacamino.site/uploads/1748797729_Logo_Principal_Transparente%203.png';
 
 const socials_networks = [
   {
