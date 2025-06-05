@@ -2,31 +2,9 @@
 
 import Section from '@/components/ui/section';
 import { DEFAULT_IMAGE, LOGO } from '@/lib/images';
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-} from '@tabler/icons-react';
+import { SOCIALS_NETWORKS } from '@/lib/social';
 
 import { motion } from 'motion/react';
-
-const socials_networks = [
-  {
-    name: 'Facebook',
-    icon: IconBrandFacebook,
-    url: 'https://www.facebook.com/',
-  },
-  {
-    name: 'Instagram',
-    icon: IconBrandInstagram,
-    url: 'https://www.instagram.com/',
-  },
-  {
-    name: 'LinkedIn',
-    icon: IconBrandLinkedin,
-    url: 'https://www.linkedin.com/',
-  },
-];
 
 export default function Hero() {
   return (
@@ -54,7 +32,7 @@ export default function Hero() {
           className="w-56 md:w-72 h-auto aspect-square "
         />
         <div className="flex gap-4 items-center justify-center">
-          {socials_networks.map((network, i) => {
+          {SOCIALS_NETWORKS.map((network, i) => {
             const Icon = network.icon;
             return (
               <motion.a
