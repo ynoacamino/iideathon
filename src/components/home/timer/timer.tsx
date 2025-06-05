@@ -12,8 +12,8 @@ interface TimeLeft {
 }
 
 export default function Timer() {
-  // Fecha objetivo: 5 de agosto 2025 a las 23:59
-  const targetDate = new Date(2025, 7, 5, 23, 59);
+  // Fecha objetivo: 15 de junio 2025 a las 23:59
+  const targetDate = new Date(2025, 5, 15, 23, 59);
 
   const calculateTimeLeft = (): TimeLeft => {
     const now = new Date();
