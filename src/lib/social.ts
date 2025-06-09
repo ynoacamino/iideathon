@@ -4,16 +4,16 @@ export const SOCIALS_NETWORKS = [
   {
     name: 'Facebook',
     icon: IconBrandFacebook,
-    url: 'https://www.facebook.com/',
+    url: 'https://www.facebook.com/IEEEUNSA/',
   },
   {
     name: 'Instagram',
     icon: IconBrandInstagram,
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/ieee.usa/',
   },
   {
     name: 'LinkedIn',
     icon: IconBrandLinkedin,
-    url: 'https://www.linkedin.com/',
+    url: 'https://www.linkedin.com/company/student-branch-ieee-unsa',
   },
 ];

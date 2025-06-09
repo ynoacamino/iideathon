@@ -5,7 +5,9 @@ import { DEFAULT_IMAGE, LOGO } from '@/lib/images';
 import { SOCIALS_NETWORKS } from '@/lib/social';
 
 import { motion } from 'motion/react';
+import Link from 'next/link';
 import Subtitle from '../ui/subtitle';
+import { Button } from '../ui/button';
 
 export default function Hero() {
   return (
@@ -28,6 +30,18 @@ export default function Hero() {
           <p className="text-3xl text-primary w-full max-w-xl">
             Tu idea puede ser la solución que la educación necesita
           </p>
+          <Button
+            asChild
+            size="lg"
+            className="text-3xl mt-4 py-3"
+          >
+            <Link
+              href="https://ynoa-uploader.ynoacamino.site/uploads/1749484850_ideathon.pdf"
+              target="_blank"
+            >
+              Saber más
+            </Link>
+          </Button>
         </div>
       </header>
       <div className="flex justify-center items-center w-full flex-col gap-4">
