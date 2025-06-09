@@ -2,26 +2,8 @@
 
 import Section from '@/components/ui/section';
 import Subtitle from '@/components/ui/subtitle';
-import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-react';
+import { SOCIALS_NETWORKS } from '@/lib/social';
 import { motion } from 'motion/react';
-
-const socials_networks = [
-  {
-    name: 'Facebook',
-    icon: IconBrandFacebook,
-    url: 'https://www.facebook.com/',
-  },
-  {
-    name: 'Instagram',
-    icon: IconBrandInstagram,
-    url: 'https://www.instagram.com/',
-  },
-  {
-    name: 'LinkedIn',
-    icon: IconBrandLinkedin,
-    url: 'https://www.linkedin.com/',
-  },
-];
 
 export default function Social() {
   return (
@@ -30,7 +12,7 @@ export default function Social() {
         Siguenos y estate atento a nuestras redes sociales
       </Subtitle>
       <div className="flex flex-col gap-4 items-center justify-center text-xl md:text-3xl text-primary font-bold">
-        {socials_networks.map((network, i) => {
+        {SOCIALS_NETWORKS.map((network, i) => {
           const Icon = network.icon;
           return (
             <motion.a
